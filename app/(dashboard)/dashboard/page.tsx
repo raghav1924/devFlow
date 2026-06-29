@@ -10,14 +10,14 @@ export default function Dashboard() {
   const router = useRouter();
 
   useEffect(() => {
-    if (!loading && user === null) {
-      router.push("/login");
-    }
+    // if (!loading && user === null) {
+    //   router.push("/login");
+    // }
   }, [user, loading, router]);
 
-  if (loading || user === null) {
-    return <p>Loading...</p>;
-  }
+  // if (loading || user === null) {
+  //   return <p>Loading...</p>;
+  // }
 
   const handleLogout = async () => {
     await signOut();
@@ -31,7 +31,8 @@ export default function Dashboard() {
             Production API Overview
           </h1>
           <p className="mt-1 text-sm text-white/60">
-            Welcome back, {user.email}
+            {/* Welcome back, {user.email} */}
+            Welcome back, Jatin
           </p>
         </div>
         <button
